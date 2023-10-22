@@ -4,9 +4,9 @@ triggers {
 pollSCM('*/5 * * * *') // Vérifier toutes les 5 minutes
 }
 stages {
-stage('Checkout') {
+stage('Checkout new changes') {
 steps {
-echo "Récupération du code source"
+echo "Récupération du code source de nouveau "
 checkout scm
 }
 }
